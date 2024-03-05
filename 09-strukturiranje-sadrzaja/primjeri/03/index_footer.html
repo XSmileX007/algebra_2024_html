@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Strukturiranje sadržaja</title>
+	
+	<style>
+	    #page-container {
+		  position: relative;
+		  min-height: 100vh;
+		}
+
+		#content-wrap {
+		  padding-bottom: 2.5rem;    /* Footer height */
+		}
+
+		#footer {
+		  position: absolute;
+		  bottom: 0;
+		  width: 100%;
+		  height: 2.5rem;            /* Footer height */
+		}
+		
+		aside {
+		  width: 30%;
+		  padding-left: 15px;
+		  margin-left: 15px;
+		  float: right;
+		  font-style: italic;
+		  background-color: lightgray;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id="page-container">
+	   <div id="content-wrap">
+		<header>
+			Zaglavlje stranice ili zaglavlje određenog dijela stranice
+			<nav>Navigacija stranice</nav>
+		</header>
+		<main>
+			Glavni sadržaj stranice
+			<section>Generička sekcija sadržaja</section>
+			<article>Cjelinu neovisnog, samostalnog sadržaja u dokumentu</article>
+			<aside>Cjelina sadržaja koja nije direktno povezana sa sadržajem koji je okružuje</aside>
+			<figure>
+				Samostalni sadržaj (slika, ilustracija i sl.) s neobaveznim nazivom (figcaption)
+				<figcaption>Naziv ili opis sadržaja u elementu figure</figcaption>
+			</figure>
+		</main>
+		</div>
+		<footer id="footer">
+			Podnožje stranice ili podnožje određenog dijela stranice
+		</footer>
+	</div>
+</body>
+
+</html>
